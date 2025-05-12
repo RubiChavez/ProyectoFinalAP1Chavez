@@ -14,7 +14,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
-        android:background="#C4D08D"
+        android:background="#BCEDAA"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -23,49 +23,54 @@
 
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="187dp"
-            android:layout_height="312dp"
+            android:layout_width="190dp"
+            android:layout_height="350dp"
             android:layout_gravity="center"
-            tools:srcCompat="@drawable/imgUsuario" />
+            android:layout_marginTop="50dp"
+            app:srcCompat="@drawable/imgusuario" />
 
         <TextView
             android:id="@+id/tvTitulo1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="BIENVENIDO(A)"
+            android:text="SIMOVAP"
             android:textSize="30sp"
             android:textStyle="bold" />
 
         <EditText
-            android:layout_width="match_parent"
+            android:id="@+id/etUsuario"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_marginTop="30sp"
             android:ems="10"
-            android:hint="Ingresa tu usuario"
+            android:hint="Usuario"
             android:inputType="text"
             android:minHeight="48dp" />
 
         <EditText
-            android:id="@+id/editTextTextPassword2"
-            android:layout_width="match_parent"
+            android:id="@+id/etContra"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_marginTop="20sp"
             android:ems="10"
-            android:hint="Ingresa tu contraseña"
+            android:hint="Contraseña"
             tools:ignore="TouchTargetSizeCheck" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btnInicioSesion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_marginTop="30sp"
             android:backgroundTint="#24A935"
             android:gravity="center"
             android:text="Iniciar Sesión" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/btnAlta"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="50sp"
