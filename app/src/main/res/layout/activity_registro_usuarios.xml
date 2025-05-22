@@ -53,18 +53,7 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/etIdUsuario"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="15sp"
-            android:layout_marginTop="20sp"
-            android:ems="10"
-            android:hint="idUsuario"
-            android:inputType="text"
-            tools:ignore="TouchTargetSizeCheck" />
-
-        <EditText
-            android:id="@+id/edNombre"
+            android:id="@+id/etRNombre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15sp"
@@ -75,7 +64,7 @@
             tools:ignore="TouchTargetSizeCheck" />
 
         <EditText
-            android:id="@+id/edRUsuario"
+            android:id="@+id/etRUsuario"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15sp"
@@ -86,7 +75,7 @@
             tools:ignore="TouchTargetSizeCheck" />
 
         <EditText
-            android:id="@+id/edRContra"
+            android:id="@+id/etRContra"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15sp"
