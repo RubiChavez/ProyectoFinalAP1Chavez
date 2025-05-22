@@ -48,7 +48,7 @@ public class AdminSQLiteOpenHelper extends SQLiteOpenHelper {
 
     public Cursor loginUsuario(String username, String password) {
         SQLiteDatabase db = this.getReadableDatabase();
-        return db.rawQuery("SELECT * FROM " + TABLE_USERS + " WHERE usuario = ? AND contrasena = ?", new String[]{username, password});
+        return db.rawQuery("SELECT * FROM " + TABLE_USERS + " WHERE usuario = ? AND contrasenia = ?", new String[]{username, password});
     }
 
     // Obtener datos por usuario
