@@ -1,5 +1,6 @@
 package com.example.proyectofinalap1chavez;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
@@ -13,9 +14,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Perfil extends AppCompatActivity {
     EditText etPidUsuario, etPerfilUsuario, etPerfilContra;
-    Button btnActualizar, btnEliminarPerfil;
+    Button btnActualizar, btnEliminarPerfil, btnRegresar;
     AdminSQLiteOpenHelper db;
     String usuarioOriginal;
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +28,7 @@ public class Perfil extends AppCompatActivity {
         etPerfilContra = findViewById(R.id.etPContra);
         btnActualizar = findViewById(R.id.btnActualizar);
         btnEliminarPerfil = findViewById(R.id.btnEliminarP);
+        btnRegresar = findViewById(R.id.btnRegresar);
 
         db = new AdminSQLiteOpenHelper(this);
         usuarioOriginal = getIntent().getStringExtra("usuario");
@@ -66,12 +69,21 @@ public class Perfil extends AppCompatActivity {
             }
         });
 
+        btnRegresar.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Perfil.this, MenuPrincipalTemas.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
     private void cargarDatosUsuario() {
         Cursor cursor = db.getUserioDatos(usuarioOriginal);
         if (cursor.moveToFirst()) {
-            etPidUsuario.setText(cursor.getString(cursor.getColumnIndexOrThrow("idusuario")));
+            etPidUsuario.setText(cursor.getString(cursor.getColumnIndexOrThrow("idUsuario")));
             etPerfilUsuario.setText(cursor.getString(cursor.getColumnIndexOrThrow("usuario")));
             etPerfilContra.setText(cursor.getString(cursor.getColumnIndexOrThrow("contrasenia")));
         }

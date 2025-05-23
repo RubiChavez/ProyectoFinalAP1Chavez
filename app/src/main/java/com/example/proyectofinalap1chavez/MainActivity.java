@@ -36,10 +36,10 @@ public class MainActivity extends AppCompatActivity {
                if (cursor.getCount() > 0) {
                    Toast.makeText(MainActivity.this, "Login exitoso", Toast.LENGTH_SHORT).show();
                    Intent intent = new Intent( MainActivity.this, MenuPrincipalTemas.class);
-                   intent.putExtra("usuario", usuario); // pasa el nombre al menú
+                   intent.putExtra("usuario", usuario);
                    startActivity(intent);
                } else {
-                   Toast.makeText(MainActivity.this, "Credenciales incorrectas", Toast.LENGTH_SHORT).show();
+                   Toast.makeText(MainActivity.this, "Usuario/contraseña incorrectos", Toast.LENGTH_SHORT).show();
                }
 
            }

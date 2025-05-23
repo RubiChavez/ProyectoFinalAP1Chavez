@@ -23,19 +23,30 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="135dp"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/tvWelcome"
+                android:id="@+id/tvTitulo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:gravity="center"
                 android:text="¡Bienvenido(a)!"
+                android:textColor="#0F0E0E"
                 android:textSize="18sp"
                 android:textStyle="bold|italic"
                 tools:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/tvUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Usuario"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
 
             <Button
                 android:id="@+id/btnPerfil"
@@ -47,10 +58,17 @@
                 android:text="@string/consultar_perfil" />
         </LinearLayout>
 
-        <LinearLayout
+        <GridLayout
+            android:id="@+id/gridTemas"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:alignmentMode="alignMargins"
+            android:rowOrderPreserved="false"
+            android:padding="16dp"
+            android:useDefaultMargins="true">
+
+
             <ImageButton
                 android:id="@+id/btnConjuntos"
                 android:layout_width="100dp"
@@ -92,7 +110,15 @@
                 android:contentDescription="Funciones recursivas" />
 
 
-        </LinearLayout>
+        </GridLayout>
+
+        <Button
+            android:id="@+id/btnCerrarS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="250sp"
+            android:text="Cerrar Sesion "
+            tools:ignore="MissingConstraints" />
 
 
     </LinearLayout>

@@ -10,10 +10,10 @@ import androidx.annotation.Nullable;
 
 public class AdminSQLiteOpenHelper extends SQLiteOpenHelper {
     private static final String DATABASE_NAME = "usuarios.db";
-    private static final int DATABASE_VERSION = 1;
+    private static final int DATABASE_VERSION = 2;
 
     private static final String TABLE_USERS = "usuarios";
-    private static final String COL_ID = "id";
+    private static final String COL_ID = "idUsuario";
     private static final String COL_USERNAME = "usuario";
     private static final String COL_PASSWORD = "contrasenia";
 

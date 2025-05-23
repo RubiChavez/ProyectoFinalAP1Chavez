@@ -5,16 +5,16 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#15F49836"
+    android:backgroundTint="#1D9251"
     tools:context=".Perfil">
 
     <LinearLayout
         android:layout_width="342dp"
         android:layout_height="164dp"
         android:orientation="vertical"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="46dp"
-        tools:ignore="MissingConstraints">
+        tools:layout_editor_absoluteY="46dp">
 
         <TextView
             android:id="@+id/tvTitulo3"
@@ -37,8 +37,8 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="324dp"
-        android:layout_height="174dp"
+        android:layout_width="316dp"
+        android:layout_height="283dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="100dp"
         android:layout_marginEnd="20dp"
@@ -74,19 +74,9 @@
             android:inputType="textPassword"
             tools:ignore="TouchTargetSizeCheck" />
 
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="354dp"
-        android:layout_height="69dp"
-        android:orientation="horizontal"
-        tools:layout_editor_absoluteX="19dp"
-        tools:layout_editor_absoluteY="518dp"
-        tools:ignore="MissingConstraints">
-
         <Button
             android:id="@+id/btnActualizar"
-            android:layout_width="wrap_content"
+            android:layout_width="138dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#E649385D"
@@ -99,6 +89,23 @@
             android:layout_weight="1"
             android:backgroundTint="#B81414"
             android:text="Eliminar Perfil" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="181dp"
+        android:layout_height="61dp"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="192dp"
+        tools:layout_editor_absoluteY="627dp">
+
+        <Button
+            android:id="@+id/btnRegresar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Regresar"
+            tools:ignore="MissingConstraints" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

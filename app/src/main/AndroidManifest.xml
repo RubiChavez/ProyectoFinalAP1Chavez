@@ -13,6 +13,21 @@
         android:theme="@style/Theme.ProyectoFinalAP1Chavez"
         tools:targetApi="31">
         <activity
+            android:name=".InducRecursion"
+            android:exported="false" />
+        <activity
+            android:name=".Graficas"
+            android:exported="false" />
+        <activity
+            android:name=".LogicaMatematica"
+            android:exported="false" />
+        <activity
+            android:name=".Relaciones"
+            android:exported="false" />
+        <activity
+            android:name=".Conjuntos"
+            android:exported="false" />
+        <activity
             android:name=".Perfil"
             android:exported="false" />
         <activity

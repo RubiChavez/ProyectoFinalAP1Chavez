@@ -57,6 +57,7 @@
             android:layout_marginTop="20sp"
             android:ems="10"
             android:hint="Contraseña"
+            android:inputType="textPassword"
             tools:ignore="TouchTargetSizeCheck" />
 
         <Button
